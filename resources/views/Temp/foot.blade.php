@@ -5,9 +5,9 @@
 
             </ul>
         </nav>
-        <div class="copyright ml-auto">
+        <!-- <div class="copyright ml-auto">
             2023, PT ANTAR NUSA TEKNIK <i class="fa fa-heart heart text-danger"></i> by <a href="https://github.com/shimozuki">Pengolahan data dan informasi</a>
-        </div>
+        </div> -->
     </div>
 </footer>
 
