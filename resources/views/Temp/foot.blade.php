@@ -6,7 +6,7 @@
             </ul>
         </nav>
         <div class="copyright ml-auto">
-            2023, BPPRD Kota Jambi <i class="fa fa-heart heart text-danger"></i> by <a href="https://bpprd.jambikota.go.id/">Pengolahan data dan informasi</a>
+            2023, PT ANTAR NUSA TEKNIK <i class="fa fa-heart heart text-danger"></i> by <a href="https://github.com/shimozuki">Pengolahan data dan informasi</a>
         </div>
     </div>
 </footer>
@@ -55,48 +55,48 @@
 <script src="../assets/js/demo.js"></script>
 <script>
     Circles.create({
-        id:'circles-1',
-        radius:45,
-        value:60,
-        maxValue:100,
-        width:7,
+        id: 'circles-1',
+        radius: 45,
+        value: 60,
+        maxValue: 100,
+        width: 7,
         text: 5,
-        colors:['#f1f1f1', '#FF9E27'],
-        duration:400,
-        wrpClass:'circles-wrp',
-        textClass:'circles-text',
-        styleWrapper:true,
-        styleText:true
+        colors: ['#f1f1f1', '#FF9E27'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        styleWrapper: true,
+        styleText: true
     })
 
     Circles.create({
-        id:'circles-2',
-        radius:45,
-        value:70,
-        maxValue:100,
-        width:7,
+        id: 'circles-2',
+        radius: 45,
+        value: 70,
+        maxValue: 100,
+        width: 7,
         text: 36,
-        colors:['#f1f1f1', '#2BB930'],
-        duration:400,
-        wrpClass:'circles-wrp',
-        textClass:'circles-text',
-        styleWrapper:true,
-        styleText:true
+        colors: ['#f1f1f1', '#2BB930'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        styleWrapper: true,
+        styleText: true
     })
 
     Circles.create({
-        id:'circles-3',
-        radius:45,
-        value:40,
-        maxValue:100,
-        width:7,
+        id: 'circles-3',
+        radius: 45,
+        value: 40,
+        maxValue: 100,
+        width: 7,
         text: 12,
-        colors:['#f1f1f1', '#F25961'],
-        duration:400,
-        wrpClass:'circles-wrp',
-        textClass:'circles-text',
-        styleWrapper:true,
-        styleText:true
+        colors: ['#f1f1f1', '#F25961'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        styleWrapper: true,
+        styleText: true
     })
 
     var totalIncomeChart = document.getElementById('totalIncomeChart').getContext('2d');
@@ -105,7 +105,7 @@
         type: 'bar',
         data: {
             labels: ["S", "M", "T", "W", "T", "F", "S", "S", "M", "T"],
-            datasets : [{
+            datasets: [{
                 label: "Total Income",
                 backgroundColor: '#ff9e27',
                 borderColor: 'rgb(23, 125, 255)',
@@ -123,22 +123,22 @@
                     ticks: {
                         display: false //this will remove only the label
                     },
-                    gridLines : {
+                    gridLines: {
                         drawBorder: false,
-                        display : false
+                        display: false
                     }
                 }],
-                xAxes : [ {
-                    gridLines : {
+                xAxes: [{
+                    gridLines: {
                         drawBorder: false,
-                        display : false
+                        display: false
                     }
                 }]
             },
         }
     });
 
-    $('#lineChart').sparkline([105,103,123,100,95,105,115], {
+    $('#lineChart').sparkline([105, 103, 123, 100, 95, 105, 115], {
         type: 'line',
         height: '70',
         width: '100%',
@@ -158,7 +158,7 @@
                 swal('Good job!', {
                     buttons: {
                         confirm: {
-                            className : 'btn btn-success'
+                            className: 'btn btn-success'
                         }
                     },
                 });
@@ -169,7 +169,7 @@
                 swal("Here's the title!", "...and here's the text!", {
                     buttons: {
                         confirm: {
-                            className : 'btn btn-success'
+                            className: 'btn btn-success'
                         }
                     },
                 });
@@ -178,10 +178,10 @@
             //== Sweetalert Demo 3
             $('#alert_demo_3_1').click(function(e) {
                 swal("Good job!", "You clicked the button!", {
-                    icon : "warning",
+                    icon: "warning",
                     buttons: {
                         confirm: {
-                            className : 'btn btn-warning'
+                            className: 'btn btn-warning'
                         }
                     },
                 });
@@ -189,10 +189,10 @@
 
             $('#alert_demo_3_2').click(function(e) {
                 swal("Good job!", "You clicked the button!", {
-                    icon : "error",
+                    icon: "error",
                     buttons: {
                         confirm: {
-                            className : 'btn btn-danger'
+                            className: 'btn btn-danger'
                         }
                     },
                 });
@@ -200,10 +200,10 @@
 
             $('#alert_demo_3_3').click(function(e) {
                 swal("Good job!", "You clicked the button!", {
-                    icon : "success",
+                    icon: "success",
                     buttons: {
                         confirm: {
-                            className : 'btn btn-success'
+                            className: 'btn btn-success'
                         }
                     },
                 });
@@ -211,10 +211,10 @@
 
             $('#alert_demo_3_4').click(function(e) {
                 swal("Good job!", "You clicked the button!", {
-                    icon : "info",
+                    icon: "info",
                     buttons: {
                         confirm: {
-                            className : 'btn btn-info'
+                            className: 'btn btn-info'
                         }
                     },
                 });
@@ -238,7 +238,7 @@
                 });
             });
 
-            $('#alert_demo_5').click(function(e){
+            $('#alert_demo_5').click(function(e) {
                 swal({
                     title: 'Input Something',
                     html: '<br><input class="form-control" placeholder="Input Something" id="input-field">',
@@ -257,13 +257,13 @@
                             className: 'btn btn-danger'
                         },
                         confirm: {
-                            className : 'btn btn-success'
+                            className: 'btn btn-success'
                         }
                     },
                 }).then(
-                function() {
-                    swal("", "You entered : " + $('#input-field').val(), "success");
-                }
+                    function() {
+                        swal("", "You entered : " + $('#input-field').val(), "success");
+                    }
                 );
             });
 
@@ -279,10 +279,10 @@
                     title: 'Are you sure?',
                     text: "You won't be able to revert this!",
                     type: 'warning',
-                    buttons:{
+                    buttons: {
                         confirm: {
-                            text : 'Yes, delete it!',
-                            className : 'btn btn-success'
+                            text: 'Yes, delete it!',
+                            className: 'btn btn-success'
                         },
                         cancel: {
                             visible: true,
@@ -295,9 +295,9 @@
                             title: 'Deleted!',
                             text: 'Your file has been deleted.',
                             type: 'success',
-                            buttons : {
+                            buttons: {
                                 confirm: {
-                                    className : 'btn btn-success'
+                                    className: 'btn btn-success'
                                 }
                             }
                         });
@@ -312,31 +312,31 @@
                     title: 'Are you sure?',
                     text: "You won't be able to revert this!",
                     type: 'warning',
-                    buttons:{
+                    buttons: {
                         cancel: {
                             visible: true,
-                            text : 'No, cancel!',
+                            text: 'No, cancel!',
                             className: 'btn btn-danger'
                         },
                         confirm: {
-                            text : 'Yes, delete it!',
-                            className : 'btn btn-success'
+                            text: 'Yes, delete it!',
+                            className: 'btn btn-success'
                         }
                     }
                 }).then((willDelete) => {
                     if (willDelete) {
                         swal("Poof! Your imaginary file has been deleted!", {
                             icon: "success",
-                            buttons : {
-                                confirm : {
+                            buttons: {
+                                confirm: {
                                     className: 'btn btn-success'
                                 }
                             }
                         });
                     } else {
                         swal("Your imaginary file is safe!", {
-                            buttons : {
-                                confirm : {
+                            buttons: {
+                                confirm: {
                                     className: 'btn btn-success'
                                 }
                             }
@@ -361,4 +361,5 @@
     });
 </script>
 </body>
+
 </html>
