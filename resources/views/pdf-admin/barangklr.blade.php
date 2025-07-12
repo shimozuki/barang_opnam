@@ -146,7 +146,7 @@
 <body>
   <header class="clearfix">
     <div id="logo">
-      <img src="LOGO.png">
+      <img src="logo.webp">
     </div>
     <h1>INVOICE BARANG KELUAR</h1>
     <div id="company" class="clearfix">
@@ -175,7 +175,6 @@
           <th>harga</th>
           <th>jumlah keluar </th>
           <th>jumlah barang </th>
-          <th>stok </th>
 
         </tr>
       </thead>
@@ -190,12 +189,11 @@
           <td class="service"> Rp.{{ number_format($post->barang->harga) }}</td>
           <td class="service">{{ $post->jml }}</td>
           <td class="service">{{ $post->barang->jumlah }}</td>
-          <td class="total">Rp. {{ number_format($post->barang->stock) }}</td>
 
         </tr>
         @endforeach
         <tr>
-          <td colspan="4" class="grand total">TOTAL</td>
+          <td colspan="3" class="grand total">TOTAL PAGU</td>
           <td class="grand total">{{ ($totalkl) }}</td>
           <td class="grand total">{{ ($totalbg) }}</td>
           <td class="grand total">Rp.{{ number_format($totals) }}</td>

@@ -20,22 +20,26 @@ class BarangkeluarController extends Controller
         $barang_keluar = Barangkeluar::orderBy('id', 'desc')->get();
         return view('barang_keluar.index', compact('barang_keluar', 'barang'));
     }
+
     public function store(Request $request)
     {
         $request->validate([
             'barang_id' => 'required',
             'tujuan' => 'required',
-            'jml' => 'required',
-
+            'jml' => 'required|integer|min:1',
         ]);
+
         $store = new \App\Models\Barangkeluar();
         $store->barang_id = $request->barang_id;
         $store->tujuan = $request->tujuan;
         $store->jml = $request->jml;
-        $store->tahun_k = now();
+        $store->tahun_k = now(); // gunakan ->format('Y') jika hanya perlu tahun
         $store->save();
-        return redirect()->route('barangkeluar.index')->with('success', 'Company has been created successfully.');
+
+        return redirect()->route('barangkeluar.index')->with('success', 'Barang keluar berhasil disimpan.');
     }
+
+
     public function create()
     {
         $brg = Barang::get();

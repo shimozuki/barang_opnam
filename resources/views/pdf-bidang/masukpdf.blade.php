@@ -146,7 +146,7 @@
 <body>
   <header class="clearfix">
     <div id="logo">
-      <img src="LOGO.png">
+      <img src="logo.webp">
     </div>
     <h1>INVOICE BARANG MASUK</h1>
     <div id="company" class="clearfix">

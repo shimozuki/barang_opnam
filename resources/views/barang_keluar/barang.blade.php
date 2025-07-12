@@ -41,7 +41,7 @@
                         <!-- Modal -->
 
                         <div class="table-responsive">
-                            <table id="add-row" class="display table table-striped table-hover" >
+                            <table id="add-row" class="display table table-striped table-hover">
                                 <thead>
                                     <tr>
                                         <th scope="col">No</th>
@@ -58,34 +58,34 @@
 
                                 <tbody>
                                     @forelse ($barangs as $no => $post)
-                            <tr>
+                                    <tr>
 
-                                <th>{{ ++$no }}</th>
+                                        <th>{{ ++$no }}</th>
 
-                                <td>{{ $post->user->name }}</td>
-                                <td>{{ $post->kategori->name }}</td>
-                                <td>{{ $post->satuan->name }}</td>
-                                <td>{{ $post->name }}</td>
-                                <td>{{ $post->harga }}</td>
-                                <td>{{ $post->jumlah }}</td>
-                                <td>{{ $post->stock }}</td>
-                                {{-- <td>{{ $post->satuans->name }}</td>
-                                <td>{{ $post->kategoris->name }}</td> --}}
+                                        <td>{{ $post->user->name }}</td>
+                                        <td>{{ $post->kategori->name }}</td>
+                                        <td>{{ $post->satuan->name }}</td>
+                                        <td>{{ $post->name }}</td>
+                                        <td>{{ $post->harga }}</td>
+                                        <td>{{ $post->jumlah }}</td>
+                                        <td>Rp. {{ number_format($post->stock) }}</td>
+                                        {{-- <td>{{ $post->satuans->name }}</td>
+                                        <td>{{ $post->kategoris->name }}</td> --}}
 
-                                <td class="text-center">
-                                    <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('pengguna.destroy', $post->id) }}" method="Post">
-                                        <a href="{{ route('pengguna.update', $post->id) }}" class="btn btn-sm btn-primary">EDIT</a>
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
-                                    </form>
-                                </td>
-                            </tr>
-                          @empty
-                              <div class="alert alert-danger">
-                                  Data Post belum Tersedia.
-                              </div>
-                          @endforelse
+                                        <td class="text-center">
+                                            <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('pengguna.destroy', $post->id) }}" method="Post">
+                                                <a href="{{ route('pengguna.update', $post->id) }}" class="btn btn-sm btn-primary">EDIT</a>
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    @empty
+                                    <div class="alert alert-danger">
+                                        Data Post belum Tersedia.
+                                    </div>
+                                    @endforelse
                                 </tbody>
                             </table>
                         </div>

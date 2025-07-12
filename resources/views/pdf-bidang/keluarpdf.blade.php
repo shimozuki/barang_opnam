@@ -146,14 +146,14 @@
 <body>
   <header class="clearfix">
     <div id="logo">
-      <img src="LOGO.png">
+      <img src="logo.webp">
     </div>
     <h1>INVOICE BARANG KELUAR</h1>
     <div id="company" class="clearfix">
-      <div>BPPRD Kota jambi</div>
-      <div>Paal Lima, Kec.Kota Baru, Kota Jambi,<br /> 36129</div>
-      <div>(0741) 40284</div>
-      <div><a href="bpprdkotajambi@gmail.com">bpprdkotajambi@gmail.com</a></div>
+      <div>PT ANTAR NUSA TEKNIK SUMBAWA</div>
+      <div>Brang Bara, Kec. Sumbawa, Kabupaten Sumbawa, Nusa Tenggara Barat,<br /> 84313</div>
+      <div>0857-9234-9639</div>
+      <div><a href="bpprdkotajambi@gmail.com">antsumbawa@gmail.com</a></div>
     </div>
     <div id="project">
       <div><span>APLIKASI</span> STOK OPNAME</div>
