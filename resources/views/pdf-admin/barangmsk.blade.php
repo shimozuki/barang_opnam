@@ -160,7 +160,7 @@
       <div><span>BIDANG</span> {{ Auth::user()->name}}</div>
       <div><span>EMAIL</span> <a href="#">{{ Auth::user()->email}}</a></div>
       <div><span>-</span></div>
-      <div><span>DATE</span> {{ $today }} </div>
+      <div><span>PRIODER</span> {{ $start }} - {{ $end }}</div>
     </div>
   </header>
   <main>

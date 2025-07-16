@@ -70,7 +70,9 @@ class PDFController extends Controller
             'totals',
             'totalbg',
             'totalms',
-            'totalkl'
+            'totalkl',
+            'start',
+            'end'
         ));
 
         return $pdf->stream('laporan-barang.pdf');
@@ -107,7 +109,9 @@ class PDFController extends Controller
             'count',
             'totals',
             'totalbg',
-            'totalms'
+            'totalms',
+            'start',
+            'end'
         ));
 
         return $pdf->stream('admin-bidang.pdf');
@@ -138,7 +142,9 @@ class PDFController extends Controller
             'count',
             'totals',
             'totalbg',
-            'totalkl'
+            'totalkl',
+            'start',
+            'end'
         ));
 
         return $pdf->stream('laporan-barang-keluar.pdf');
