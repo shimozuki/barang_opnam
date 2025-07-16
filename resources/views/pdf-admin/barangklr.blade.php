@@ -161,6 +161,7 @@
       <div><span>EMAIL</span> <a href="#">{{ Auth::user()->email}}</a></div>
       <div><span>-</span></div>
       <div><span>PRIODER</span> {{ $start }} - {{ $end }}</div>
+      <div><span>Tanggal Cetak</span> {{ $today }} </div>
     </div>
   </header>
   <main>
